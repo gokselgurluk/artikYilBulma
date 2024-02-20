@@ -15,14 +15,14 @@ public class Main {
                         System.out.println("Bu yıl artık bir yıldır");
                     }
                     else {
-                        System.out.println("Bu yıl artık bir değildir");
+                        System.out.println("Bu yıl artık bir yıl değildir");
                     }
                 }else {
                     System.out.println("Bu yıl artık bir yıldır");
                 }
             }
             else {
-                System.out.println("Bu yıl artık bir değildir");
+                System.out.println("Bu yıl artık bir yıl değildir");
             }
         }
     }
