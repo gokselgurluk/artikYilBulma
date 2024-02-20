@@ -10,19 +10,20 @@ public class Main {
         //yıl bilgisini aldık
         if (year >= 0) {
             if (year % 4 == 0) {
-                if (year % 100 == 0 && year % 400 == 0) {
-                    //  yıl bilgisi 100 un aktı olmayan yıllar için 4 e
-                    //  100 katı olan yıllar için 400e bölünüp bölünmedigine baktık
-                    System.out.println(year + " Bir artık yıldır: ");
-                    // sonucu kullanıcı görmesi için ekrana bastırdık
-                } else {
-                    System.out.print(year + " Bir artık yıl degildir: ");
-
+                if (year % 100 == 0) {
+                    if (year % 400 == 0) {
+                        System.out.println("Bu yıl artık bir yıldır");
+                    }
+                    else {
+                        System.out.println("Bu yıl artık bir değildir");
+                    }
+                }else {
+                    System.out.println("Bu yıl artık bir yıldır");
                 }
             }
-        }
-        else {
-            System.out.println("Yıl bilgisi 0 dan küçük olamaz");
+            else {
+                System.out.println("Bu yıl artık bir değildir");
+            }
         }
     }
 }
